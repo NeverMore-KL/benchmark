@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let t0 = window.performance.now()
+      doSomething()
+      let t1 = window.performance.now()
+      console.log('doSomething函数执行了' + (t1 - t0) + '毫秒.')
+
+      function doSomething() {
+        console.log(1)
+      }
+      //out put
+      //doSomething函数执行了1.3000000035390258毫秒.
+    </script>
+  </body>
+</html>
